@@ -1,6 +1,5 @@
 plugins {
-    id("java")
-    id("com.lab3.gradle.modules-dependencies-plugin")
+    id("java-gradle-plugin")
 }
 
 group = "com.lab3.gradle.password-utils"
@@ -13,6 +12,15 @@ repositories {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+}
+
+gradlePlugin {
+    plugins {
+        create("modulesDependencies") {
+            id = "com.lab3.gradle.modules-dependencies-plugin"
+            implementationClass = "com.lab3.gradle.passwordutils.plugin.DependencyTreePlugin"
+        }
+    }
 }
 
 tasks.test {
