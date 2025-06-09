@@ -16,9 +16,9 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        create("moduleDependencies") {
-            id = "com.lab3.gradle.password-plugin"
-            implementationClass = "com.lab3.gradle.passwordutils.plugin.ProjectDependencyTreePlugin"
+        create("modulesDependencies") {
+            id = "com.lab3.gradle.modules-dependencies-plugin"
+            implementationClass = "com.lab3.gradle.passwordutils.plugin.DependencyTreePlugin"
         }
     }
 }

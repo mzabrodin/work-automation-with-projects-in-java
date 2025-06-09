@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("com.lab3.gradle.password-plugin")
+    id("com.lab3.gradle.modules-dependencies-plugin")
 }
 
 group = "com.lab3.gradle.password-utils"

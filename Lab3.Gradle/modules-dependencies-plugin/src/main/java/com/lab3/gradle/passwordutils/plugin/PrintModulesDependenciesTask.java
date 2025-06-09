@@ -8,7 +8,7 @@ import org.gradle.api.tasks.TaskAction;
 
 import java.util.Set;
 
-public class PrintModuleDependenciesTask extends DefaultTask {
+public class PrintModulesDependenciesTask extends DefaultTask {
     @TaskAction
     public void printDependencies() {
         Project project = getProject();
