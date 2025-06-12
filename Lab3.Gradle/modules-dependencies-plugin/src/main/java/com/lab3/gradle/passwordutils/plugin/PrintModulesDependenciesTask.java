@@ -25,7 +25,7 @@ public class PrintModulesDependenciesTask extends DefaultTask {
 
             for (Dependency dep : dependencies) {
                 if (dep instanceof ProjectDependency pd) {
-                    System.out.println("  depends on project -> " + pd.getDependencyProject().getName());
+                    System.out.println("\tdepends on module\t->\t" + pd.getDependencyProject().getName());
                     hasDeps = true;
                 } else {
                     String group = dep.getGroup();
@@ -33,7 +33,7 @@ public class PrintModulesDependenciesTask extends DefaultTask {
                     String version = dep.getVersion();
 
                     if (group != null && version != null) {
-                        System.out.println("  depends on library -> " + group + ":" + name + ":" + version);
+                        System.out.println("\tdepends on library\t->\t" + group + ":" + name + ":" + version);
                         hasDeps = true;
                     }
                 }
