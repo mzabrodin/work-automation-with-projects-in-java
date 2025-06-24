@@ -47,4 +47,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Lab6-CI-CD-jar
-          path: target/*.jar
+          path: Lab6.CI-CD/target/*.jar
