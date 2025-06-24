@@ -13,6 +13,6 @@ public class Main {
         int rabbits = scanner.nextInt();
 
         int result = Rabbits.calculate(months, rabbits);
-        System.out.printf("After %d months there are %d rabbits left on planet TTV", months, result);
+        System.out.printf("After %d months, %d rabbits live on the TTV planet", months, result);
     }
 }
